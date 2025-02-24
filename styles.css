@@ -1,0 +1,242 @@
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header .logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  header .logo .gradient-logo {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    color: #ff7e5f;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background-color: #34495e;
+    color: white;
+    padding: 60px 20px;
+    margin-bottom: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .hero .cta-btn {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero .cta-btn:hover {
+    background-color: #feb47b;
+  }
+  
+  /* Blog Posts Section */
+  .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Latest Blog */
+  #parent-post {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .post1, .post2 {
+    width: 48%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .post1:hover, .post2:hover {
+    transform: scale(1.05);
+  }
+  
+  .post1 img, .post2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .post1 h2, .post2 h2 {
+    padding: 15px;
+    font-size: 1.6em;
+  }
+  
+  .post1 p, .post2 p {
+    padding: 0 15px 15px;
+    font-size: 1em;
+  }
+  
+  .post1 .date, .post2 .date {
+    padding: 0 15px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  
+  .post1 a, .post2 a {
+    display: inline-block;
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .post1 a:hover, .post2 a:hover {
+    background-color: #feb47b;
+  }
+  
+  /* All Other Posts */
+  .post {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .post:hover {
+    transform: scale(1.05);
+  }
+  
+  .post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .post h2 {
+    padding: 15px;
+    font-size: 1.4em;
+  }
+  
+  .post p {
+    padding: 0 15px 15px;
+    font-size: 1em;
+  }
+  
+  .post .date {
+    padding: 0 15px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  
+  .post a {
+    display: inline-block;
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .post a:hover {
+    background-color: #feb47b;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #parent-post {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .post {
+      width: 100%;
+    }
+  
+    header .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
