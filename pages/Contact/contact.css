@@ -141,17 +141,55 @@
   button:hover {
     background-color: #feb47b; /* Hover color */
   }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #1e1e1e; /* Dark footer */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-  }
-  
-  footer p {
-    font-size: 1.1em;
-  }
+footer {
+  background-color: #1E1E1E;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo .gradient-logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer-logo p {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #ff7e5f;
+}
+
+.footer-copy {
+  font-size: 0.85em;
+  color: #aaa;
+}
+
   
